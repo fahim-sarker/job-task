@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softnio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="cartpage">
+                <div class="cart">
+                    <div class="cartthumbnail">
+                        <img id="mainThumbnail" class="cartimage" src="Images/thumbnail4.png" alt="Main Thumbnail">
+                    </div>
+                    <div class="cartdetails">
+                        <h3 class="carttitle">Classy Modern Smart watch</h3>
+                        <ul class="cartstar">
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li class="cartreview">(2 Reviews)</li>
+                        </ul>
+                        <div class="cartprice">
+                            <h6 class="prevprice">$99.00</h6>
+                            <h5 class="currentprice">$79.00</h5>
+                        </div>
+                        <p class="cartdescription">I must explain to you how all this mistaken idea of denoun cing ple
+                            praising pain was born and I will give you a complete account of the system, and expound the
+                            actual teaching.</p>
+                        <div class="category">
+                            <div class="type">
+                                <h6>Type</h6>
+                                <h5>Watch</h5>
+                            </div>
+                            <div class="model">
+                                <h6>Model Number</h6>
+                                <h5>Forerunner 290XT</h5>
+                            </div>
+                        </div>
+                        <div class="bandcolor">
+                            <h3>Band Color</h3>
+                            <div class="color">
+                                <div class="color1" onclick="changeThumbnail('Images/thumbnail4.png')"></div>
+                                <div class="color2" onclick="changeThumbnail('Images/thumbnail3.png')"></div>
+                                <div class="color3" onclick="changeThumbnail('Images/thumbnail2.png')"></div>
+                                <div class="color4" onclick="changeThumbnail('Images/thumbnail1.png')"></div>
+                            </div>
+                        </div>
+                        <div class="wrist">
+                            <h3>Wrist Size</h3>
+                            <div class="size">
+                                <div class="size1">
+                                    <h6><span>S</span>$69</h6>
+                                </div>
+                                <div class="size2">
+                                    <h6><span>M</span>$79</h6>
+                                </div>
+                                <div class="size3">
+                                    <h6><span>L</span>$89</h6>
+                                </div>
+                                <div class="size4">
+                                    <h6><span>XL</span>$99</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productmeta">
+                            <div class="quantity">
+                                <p class="decrement">-</p>
+                                <p class="itemquantity">0</p>
+                                <p class="increment">+</p>
+                            </div>
+                            <button class="cartbtn" id="cartbtn">Add to Cart</button>
+                            <i class="heart"><i class="fa-regular fa-heart"></i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <h5>Checkout</h5>
+                    <p>0</p>
+                </div>
+                
+                <div class="cart-modal" id="modal" style="display: none;">
+                    <h3>Your Cart</h3>
+                    <div class="cartitemdetail">
+                        <div class="cartitem">
+                            <h5>Item</h5>
+                        </div>
+                        <div class="cartcolor">
+                            <h5>Color</h5>
+                        </div>
+                        <div class="cartsize">
+                            <h5>Size</h5>
+                        </div>
+                        <div class="cartitemqty">
+                            <h5>Qnt</h5>
+                        </div>
+                        <div class="price">
+                            <h5>Price</h5>
+                        </div>
+                    </div>
+                    <div class="productdetail">
+                        <div class="productitem">
+                            <img src="Images/thumbnail4.png" alt="">
+                            <h5>Classy Modern Smart watch</h5>
+                        </div>
+                        <div class="productcolor">
+                            <h5>Black</h5>
+                        </div>
+                        <div class="productsize">
+                            <h5>XL</h5>
+                        </div>
+                        <div class="productqty">
+                            <h5>1</h5>
+                        </div>
+                        <div class="productprice">
+                            <h5>$99.00</h5>
+                        </div>
+                    </div>
+                    <div class="totalproduct">
+                        <div class="total">
+                            <h5>Total</h5>
+                        </div>
+                        <div class="totalqty">
+                            <h5>2</h5>
+                        </div>
+                        <div class="totalprice">
+                            <h5>$356.00</h5>
+                        </div>
+                    </div>
+                    <div class="cart-button">
+                        <button class="shopingbtn">Continue Shopping</button>
+                        <a href="#" class="checkbtn">Checkout</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
